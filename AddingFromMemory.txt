@@ -1,0 +1,6 @@
+05000 #orig
+0000000000000000
+53204001 12005001 #Load into register 2 the address 5001 AND Zero out A
+14200000 51200001 #Add register 2 content into A AND Add to register 2 plus 1
+16200000 23305004 #Load register 2 into Q  AND Branch to next branch on negative(5004)
+23005003 50000000 #Branch to start of loop(5003) AND Do nothing

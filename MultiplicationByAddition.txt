@@ -1,0 +1,10 @@
+0600  #orig
+16003002 21007001 #Load into Q 3002 AND Store the contents at 7001
+12003001 50000000 #Load 3001 into A AND Do nothing					
+14003001 73003002 #Add 3001 to A AND Minus one to the location address 3002	
+16003002 23206003 #Load the Result into Q  AND Jump if it is positive
+20007000 50000000  #Store A AND #Do Nothing
+12003001 24007001 #Load into A the contents of 03001 AND #Find the product
+15007000 22006011 #Subtract the Multiplication AND #Branch to the next line if it is a zero
+20003000 50000000 #Store at 3000 if zero AND #Do Nothing
+
